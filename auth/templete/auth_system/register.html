@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>register</h1>
+    <div class="form">
+        
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="fname">First Name:</label>
+            <input type="text" placeholder="Enter first name" name="fname" id="fname1">
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" placeholder="Enter last name" name="lname" id="lname1">
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Create username" name="uname" id="username1">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter email" name="email" id="email1">
+            <br>
+            <label for="pass1">Password:</label>
+            <input type="password" placeholder="Create password" name="pass" id="pass1">
+            <br>
+            <button type="submit">Submit</button>
+            <p>If you already have an account, <a href="{% url 'login' %}">login here</a>.</p>
+
+
+        </form>
+       
+    </div>
+</body>
+</html>

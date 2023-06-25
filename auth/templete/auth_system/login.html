@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <h1>login in </h1>
+    
+{% if error_message %}
+    <p>{{ error_message }}</p>
+{% endif %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+            <input type="text" placeholder="Create username" name="uname" id="username1">
+            <br>
+            <label for="pass1">Password:</label>
+            <input type="password" placeholder="Create password" name="pass" id="pass1">
+            <br>
+            <button type="submit">Submit</button>
+            <p> if not account then signup, <a href="{% url 'registerpage' %}">registerpage</a>.</p>
+        </form>
+</body>
+</html>
