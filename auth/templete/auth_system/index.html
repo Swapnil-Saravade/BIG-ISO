@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/static.css' %}">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +17,7 @@
         {% endfor %}
     </ul>
     {% endif %}
-    <p> if not account then signup, <a href="{% url 'login' %}">logout</a>.</p>
+    <p> if not account then signup, <a href="{% url 'logout' %}">logout</a>.</p>
 
     
 </body>

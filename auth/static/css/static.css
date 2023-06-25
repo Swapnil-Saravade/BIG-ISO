@@ -1,4 +1,9 @@
-body {
-    background-color: rgb(28, 105, 80);
+h1 {
+    color: rgb(194, 124, 20);
 }
-D:\Django Pratices\login form3\auth\static\css\static.css
+head {
+    background-color: aqua;
+}
+form {
+    background-color: rgb(201, 44, 83);
+}
